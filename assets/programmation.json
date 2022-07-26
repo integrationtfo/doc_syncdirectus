@@ -1,0 +1,78 @@
+{
+    "data": [
+      {
+        "id": integer,
+        "program_id": integer,
+        "product_id": integer,
+        "begin": "2011-02-21T00:00:00.000Z",
+        "end": "2026-03-28T00:00:00.000Z",
+        "version": null,
+        "titre": string,
+        "territories": [],
+        "svod_right": boolean,
+        "live": boolean,
+        "advertising": null,
+        "video_id": string,
+        "video_duration": "00:00:31",
+        "video_tcin": "00:00:00:00",
+        "video_tcout": "00:00:31:11",
+        "video_closed_captions_url": "http://cpc.delvenetworks.com/CcVuwwzBT8kmon62jMbals/fh0GaC9VRcYj0_P4pJ_BLQ/cc/15.xml",
+        "video_allow_ads": "1",
+        "video_caption_vtt": "http://gmtfo.content.video.llnw.net/smedia/09c56ec30cc14fc99a89fada331b6a5b/M5/EP44rAo1lDCW5iwTPVD8XUXV89NFdMWT9v3VRr-Y0/vtt/15/fr.vtt",
+        "video_start_date": "1298264400",
+        "video_end_date": "1774670400",
+        "subtitles": [],
+        "pedagogicalcategories": [],
+        "othermaterials": null,
+        "nonlinearcategories": [
+          {
+            "end": "2026-03-27T00:00:00",
+            "key": 100000130,
+            "code": "stopic",
+            "name": "activité physique",
+            "begin": "2015-07-15T00:00:00",
+            "order": 50,
+            "parent": 100000129,
+            "program": 1101431997
+          },
+          {
+            "end": "2026-03-27T00:00:00",
+            "key": 100000129,
+            "code": "topic",
+            "name": "Education",
+            "begin": "2015-07-15T00:00:00",
+            "order": 50,
+            "parent": 0,
+            "program": 1101431997
+          },
+          {
+            "end": "2026-03-27T00:00:00",
+            "key": 100000126,
+            "code": "stopic",
+            "name": "humour",
+            "begin": "2015-07-15T00:00:00",
+            "order": 50,
+            "parent": 100000002,
+            "program": 1101431997
+          },
+          {
+            "end": "2026-03-27T00:00:00",
+            "key": 100000002,
+            "code": "topic",
+            "name": "Divertissement",
+            "begin": "2015-07-15T00:00:00",
+            "order": 50,
+            "parent": 0,
+            "program": 1101431997
+          }
+        ],
+        "images": null,
+        "authorizedcountries": [],
+        "status": "true",
+        "created_at": "2022-05-26T03:03:05.000Z",
+        "updated_at": "2022-07-04T13:00:48.000Z",
+        "target": "G",
+        "program_duration": null
+      }
+    ]
+}
