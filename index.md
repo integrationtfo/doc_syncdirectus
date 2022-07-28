@@ -9,3 +9,5 @@ La documentation de Directus est en anglais uniquement.
 Un token est necessaire pour acceder aux donnees fourni par dans l'API. Le token sera fourni par l'equipe de Solutions Numerique.
 
 Url de base: https://mogador.directus.app
+
+L'heure affiche dans les resultat est en UTC
