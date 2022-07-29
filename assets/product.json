@@ -1,0 +1,56 @@
+{
+    "data": [
+      {
+        "id": "1",
+        "product_id": 100285396,
+        "biznumber": "00152297",
+        "title": "Hiver : La glissoire géante",
+        "short_title": "Epi#",
+        "production_year": "2012",
+        "duration": "00:00:30",
+        "distributor": null,
+        "url": null,
+        "origin_country": "Canada",
+        "type": "Episode Production",
+        "kind": "2 à 6 ans",
+        "subkind": "-",
+        "category": null,
+        "target": null,
+        "rating": null,
+        "versions": null,
+        "images": [
+          {
+            "tc": null,
+            "name": "00152297_det.jpg",
+            "path": null,
+            "pos_x": 0,
+            "pos_y": 0,
+            "title": null,
+            "usage": null,
+            "width": 0,
+            "format": null,
+            "height": 0,
+            "comment": null,
+            "product": 100285396,
+            "program": 0,
+            "version": null,
+            "video_id": null,
+            "tc_frames": 0,
+            "file_ratio": null,
+            "external_id": null,
+            "file_delivery": "2012-05-10T10:39:37"
+          }
+        ],
+        "collection_title": "Mini TFO - Les saisons",
+        "status": "true",
+        "created_at": "2022-05-26T02:50:09.000Z",
+        "updated_at": "2022-07-04T13:00:46.000Z",
+        "press_fr_title": "Hiver : La glissoire géante",
+        "press_fr_short_summary": "Louis et Josée glissent.",
+        "press_fr_long_summary": "Louis et Josée s'amusent en hiver. Ils glissent.\r\rObjectifs :\r- Montrer à l'enfant les changements que la saison de l'hiver apporte.\r- Associer des activités à la saison de l'hiver.",
+        "press_en_title": "Winter: Huge Slide",
+        "press_en_short_summary": "Louis and Josée have fun in the winter.",
+        "press_en_long_summary": "Louis and Josée have fun in the winter. They go sledding."
+      }
+    ]
+}
