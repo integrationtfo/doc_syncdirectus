@@ -29,12 +29,12 @@ biznumber | string | L'identifiant du produit
 title | string | Titre du produit
 short_title | string | Titre court
 production_year | string | Annee de production
-duration | ... | Duree de lecture du produit
+duration | time format HH:MM:SS | Duree de lecture du produit
 origin_country | string | Pays d'origine
 type | string | Type de produit
-kind | string | ...
-subkind | string | ...
-category | ... | ...
+kind | string | Definition du genre de produit
+subkind | string | Definition du sous-genre de produit
+category | string | Categorie a laquelle le produit appartient
 target | string | Audience cible du produit
 rating | string | Evaluation du produit
 versions | string | Version du produit
