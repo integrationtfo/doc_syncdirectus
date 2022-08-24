@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.712423698678">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.714645885751">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Produits</title>
     <meta name="title" content="Produits">
-    <meta name="description" content="Parametre" />
+    <meta name="description" content="Paramètre" />
 
     <!-- Canonical -->
     <link rel="canonical" href="/produits/" />
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="/produits/">
     <meta property="og:title" content="Produits">
-    <meta property="og:description" content="Parametre">
+    <meta property="og:description" content="Paramètre">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/produits/">
     <meta property="twitter:title" content="Produits">
-    <meta property="twitter:description" content="Parametre">
+    <meta property="twitter:description" content="Paramètre">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.712423698678" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.714645885751" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.712423698678" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.714645885751" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.712423698678" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.712423698678" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.714645885751" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.714645885751" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -192,7 +192,7 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th>Parametre</th>
+<th>Paramètre</th>
 <th>Obligatoire</th>
 <th>Type</th>
 <th>Exemple</th>
@@ -226,7 +226,7 @@
         <span>Resource</span>
     </h2>
 </doc-anchor-target>
-<p>Les informations fournis par l&#x27;API auront la presentation suivante.</p>
+<p>Les informations fournies par l&#x27;API auront la présentation suivante.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;data&quot;: [
@@ -297,14 +297,16 @@
 <tr>
 <th>Donnee</th>
 <th>Type</th>
-<th>Definition</th>
+<th>Définition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>product_key</td>
 <td>integer</td>
-<td>Cle relationnelle pour la connexion de la base de donnees</td>
+<td>L&#x27;identifiant primaire (Primary Key) - One to many sur la table de programmation <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>PK</span>
+</span></td>
 </tr>
 <tr>
 <td>biznumber</td>
@@ -324,12 +326,12 @@
 <tr>
 <td>production_year</td>
 <td>string</td>
-<td>Annee de production</td>
+<td>Année de production</td>
 </tr>
 <tr>
 <td>duration</td>
 <td>time format HH:MM:SS</td>
-<td>Duree de lecture du produit</td>
+<td>Durée de lecture du produit</td>
 </tr>
 <tr>
 <td>origin_country</td>
@@ -344,17 +346,17 @@
 <tr>
 <td>kind</td>
 <td>string</td>
-<td>Definition du genre de produit</td>
+<td>Définition du genre de produit</td>
 </tr>
 <tr>
 <td>subkind</td>
 <td>string</td>
-<td>Definition du sous-genre de produit</td>
+<td>Définition du sous-genre de produit</td>
 </tr>
 <tr>
 <td>category</td>
 <td>string</td>
-<td>Categorie a laquelle le produit appartient</td>
+<td>Catégorie à laquelle le produit appartient</td>
 </tr>
 <tr>
 <td>target</td>
@@ -374,12 +376,12 @@
 <tr>
 <td>images</td>
 <td>array</td>
-<td>Informations des images associes au produit</td>
+<td>Informations des images associées au produit</td>
 </tr>
 <tr>
 <td>collection_title</td>
 <td>string</td>
-<td>Titre de la collection a laquelle appartient le produit</td>
+<td>Titre de la collection à laquelle appartient le produit</td>
 </tr>
 <tr>
 <td>status</td>
@@ -394,7 +396,7 @@
 <tr>
 <td>updated_at</td>
 <td>time UTC</td>
-<td>Date de derniere mise a jour du produit</td>
+<td>Date de derniere mise à jour du produit</td>
 </tr>
 <tr>
 <td>press_fr_title</td>

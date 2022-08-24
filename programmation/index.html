@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.712423698678">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.714645885751">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Programmation</title>
     <meta name="title" content="Programmation">
-    <meta name="description" content="La collection de programmation contient toutes les informations sur l'organisation des programs sur une chaine." />
+    <meta name="description" content="La collection de programmation contient toutes les informations sur l'organisation des expositions sur une chaine." />
 
     <!-- Canonical -->
     <link rel="canonical" href="/programmation/" />
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="/programmation/">
     <meta property="og:title" content="Programmation">
-    <meta property="og:description" content="La collection de programmation contient toutes les informations sur l'organisation des programs sur une chaine.">
+    <meta property="og:description" content="La collection de programmation contient toutes les informations sur l'organisation des expositions sur une chaine.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/programmation/">
     <meta property="twitter:title" content="Programmation">
-    <meta property="twitter:description" content="La collection de programmation contient toutes les informations sur l'organisation des programs sur une chaine.">
+    <meta property="twitter:description" content="La collection de programmation contient toutes les informations sur l'organisation des expositions sur une chaine.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.712423698678" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.714645885751" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.712423698678" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.714645885751" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.712423698678" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.712423698678" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.714645885751" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.714645885751" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -173,7 +173,7 @@
         <span>Programmation</span>
     </h1>
 </doc-anchor-target>
-<p>La collection de programmation contient toutes les informations sur l&#x27;organisation des programs sur une chaine.</p>
+<p>La collection de programmation contient toutes les informations sur l&#x27;organisation des expositions sur une chaine.</p>
 <doc-anchor-target id="method">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
@@ -193,7 +193,7 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th>Parametre</th>
+<th>Paramètre</th>
 <th>Obligatoire</th>
 <th>Type</th>
 <th>Exemple</th>
@@ -221,7 +221,7 @@
         <span>Resource</span>
     </h2>
 </doc-anchor-target>
-<p>Les informations fournis par l&#x27;API auront la presentation suivante.</p>
+<p>Les informations fournies par l&#x27;API auront la présentation suivante.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;data&quot;: [
@@ -319,19 +319,21 @@
 </thead>
 <tbody>
 <tr>
-<td>program_id</td>
+<td>program_key</td>
 <td>integer</td>
-<td>L&#x27;identifiant permettant d&#x27;identifier le programme dans Mogador</td>
+<td>L&#x27;identifiant primaire (Primary Key) pour les programmations <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>PK</span>
+</span></td>
 </tr>
 <tr>
 <td>product_id</td>
 <td>integer</td>
-<td>L&#x27;identifiant permettant de recuperer les informations completes du produit dans Mogador</td>
+<td>L&#x27;identifiant permettant de recuperer les informations complètes d&#x27;un produit</td>
 </tr>
 <tr>
 <td>being</td>
 <td>string</td>
-<td>La date et l&#x27;heure de debut de diffusion</td>
+<td>La date et l&#x27;heure de début de diffusion</td>
 </tr>
 <tr>
 <td>end</td>
@@ -341,17 +343,17 @@
 <tr>
 <td>version</td>
 <td>string</td>
-<td>Version du programme</td>
+<td>Les versions de la programmation</td>
 </tr>
 <tr>
 <td>titre</td>
 <td>string</td>
-<td>Le titre du produit</td>
+<td>Le titre de la programmation</td>
 </tr>
 <tr>
 <td>territories</td>
 <td>array</td>
-<td>Territoires dans lesquels le programme sera visible</td>
+<td>Territoires dans lesquels la programmation sera accepté ou refusé</td>
 </tr>
 <tr>
 <td>svod_right</td>
@@ -361,7 +363,7 @@
 <tr>
 <td>live</td>
 <td>boolean</td>
-<td>Informe si l&#x27;emission est en directe ou non</td>
+<td>Informe si l&#x27;émission est en directe ou non</td>
 </tr>
 <tr>
 <td>advertising</td>
@@ -371,47 +373,47 @@
 <tr>
 <td>video_id</td>
 <td>string</td>
-<td>L&#x27;identifiant Limelight de la video</td>
+<td>L&#x27;identifiant Limelight de la vidéo associée à la programmation</td>
 </tr>
 <tr>
 <td>video_duration</td>
 <td>string</td>
-<td>Duree de la video</td>
+<td>Durée de la vidéo</td>
 </tr>
 <tr>
 <td>video_tcin</td>
 <td>string</td>
-<td>...</td>
+<td>Début de la vidéo - Format heures, minutes, secondes et frames</td>
 </tr>
 <tr>
 <td>video_tcout</td>
 <td>string</td>
-<td>...</td>
+<td>Fin de la vidéo</td>
 </tr>
 <tr>
 <td>video_closed_captions_url</td>
 <td>string</td>
-<td>Lien url contenant les sous-titrages de la video (format XML)</td>
+<td>Lien url contenant les sous-titrages de la vidéo (format XML)</td>
 </tr>
 <tr>
 <td>video_allow_ads</td>
 <td>boolean</td>
-<td>Si oui ou non la pub peut etre ajoute a la video</td>
+<td>Si oui ou non la pub peut être ajoutée à la vidéo</td>
 </tr>
 <tr>
 <td>video_caption_vtt</td>
 <td>string</td>
-<td>Lien url contenant la video transcription de la video (format VTT)</td>
+<td>Lien url contenant le sous titrages de la vidéo (format VTT)</td>
 </tr>
 <tr>
 <td>video_start_date</td>
 <td>string</td>
-<td>Date de debut du programme (Unix Timestamp)</td>
+<td>Date de début de la vidéo (Unix Timestamp)</td>
 </tr>
 <tr>
 <td>video_end_date</td>
 <td>string</td>
-<td>Date de fin du programme (Unix Timestamp)</td>
+<td>Date de fin de la vidéo (Unix Timestamp)</td>
 </tr>
 <tr>
 <td>subtitles</td>
@@ -421,22 +423,22 @@
 <tr>
 <td>pedagogicalcategories</td>
 <td>array</td>
-<td>Liste de Categories pedagogiques du programme</td>
+<td>Liste de catégories pédagogiques de la programmation</td>
 </tr>
 <tr>
 <td>othermaterials</td>
 <td>array</td>
-<td>Autres ressources associes au programme</td>
+<td>Autres ressources associées à la programmation</td>
 </tr>
 <tr>
 <td>nonlinearcategories</td>
 <td>array</td>
-<td>Liste des categories (objet json) auxquels la video a est associee</td>
+<td>Liste des catégories (objet json) auxquels la vidéo est associée</td>
 </tr>
 <tr>
 <td>images</td>
 <td>string</td>
-<td>Nom de l&#x27;image vitrine de la video</td>
+<td>Nom de l&#x27;image vitrine de la vidéo</td>
 </tr>
 <tr>
 <td>authorizedcountries</td>
@@ -451,12 +453,12 @@
 <tr>
 <td>created_at</td>
 <td>string</td>
-<td>Date de creation du programme</td>
+<td>Date de création dans Directus</td>
 </tr>
 <tr>
 <td>updated_at</td>
 <td>string</td>
-<td>Derniere date de mise a jour du programme</td>
+<td>Derniere date de mise a jour dans Directus</td>
 </tr>
 <tr>
 <td>target</td>
@@ -466,7 +468,7 @@
 <tr>
 <td>program_duration</td>
 <td>integer</td>
-<td>Duree du programme (en minutes)</td>
+<td>Durée du programme (en minutes)</td>
 </tr>
 </tbody>
 </table>
