@@ -49,3 +49,6 @@ press_fr_long_summary | string | Longue description du produit en francais
 press_en_title | string | Titre du produit en anglais
 press_en_short_summary | string | Courte description du produit en anglais
 press_en_long_summary | string | Longue description du produit en anglais
+
+
+
