@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Produits</title>
-    <meta name="title" content="Produits">
-    <meta name="description" content="La table de produit contient les éléments concernant chaque produit. Il est impératif de valider sa diffusion à partir de la table de programmation.">
+    <title>Series</title>
+    <meta name="title" content="Series">
+    <meta name="description" content="La table de series contient l'ensembles des séries associées aux produits. Le primary key de la série spermettra de retrouver les produits liés.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="/produits/">
+    <link rel="canonical" href="/series/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/produits/">
-    <meta property="og:title" content="Produits">
-    <meta property="og:description" content="La table de produit contient les éléments concernant chaque produit. Il est impératif de valider sa diffusion à partir de la table de programmation.">
+    <meta property="og:url" content="/series/">
+    <meta property="og:title" content="Series">
+    <meta property="og:description" content="La table de series contient l'ensembles des séries associées aux produits. Le primary key de la série spermettra de retrouver les produits liés.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/produits/">
-    <meta property="twitter:title" content="Produits">
-    <meta property="twitter:description" content="La table de produit contient les éléments concernant chaque produit. Il est impératif de valider sa diffusion à partir de la table de programmation.">
+    <meta property="twitter:url" content="/series/">
+    <meta property="twitter:title" content="Series">
+    <meta property="twitter:description" content="La table de series contient l'ensembles des séries associées aux produits. Le primary key de la série spermettra de retrouver les produits liés.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -150,13 +150,13 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="produits" class="break-words">
+<doc-anchor-target id="series" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#produits">#</doc-anchor-trigger>
-        <span>Produits</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#series">#</doc-anchor-trigger>
+        <span>Series</span>
     </h1>
 </doc-anchor-target>
-<p>La table de produit contient les éléments concernant chaque produit. Il est impératif de valider sa diffusion à partir de la table de programmation.</p>
+<p>La table de series contient l&#x27;ensembles des séries associées aux produits. Le primary key de la série spermettra de retrouver les produits liés.</p>
 <doc-anchor-target id="les-données">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#les-données">#</doc-anchor-trigger>
@@ -174,9 +174,9 @@
 </thead>
 <tbody>
 <tr>
-<td>product_key</td>
+<td>serie_key</td>
 <td>integer</td>
-<td>L&#x27;identifiant primaire (Primary Key) - One to many sur la table de programmation <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<td>L&#x27;identifiant primaire (Primary Key) - <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>PK</span>
 </span></td>
 </tr>
@@ -201,9 +201,14 @@
 <td>Année de production</td>
 </tr>
 <tr>
-<td>duration</td>
-<td>time format HH:MM:SS</td>
-<td>Durée de lecture du produit</td>
+<td>distributor</td>
+<td>string</td>
+<td>Nom du distibuteur</td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>Nom du distibuteur</td>
 </tr>
 <tr>
 <td>origin_country</td>
@@ -233,7 +238,7 @@
 <tr>
 <td>target</td>
 <td>string</td>
-<td>Le public visé du produit</td>
+<td>La cible au niveau de la version de la série</td>
 </tr>
 <tr>
 <td>rating</td>
@@ -251,11 +256,6 @@
 <td>Informations des images associées au produit</td>
 </tr>
 <tr>
-<td>serie_key</td>
-<td>string</td>
-<td>L&#x27;identifiant primaire (Primary Key) de la séerie à laquelle appartient le produit</td>
-</tr>
-<tr>
 <td>collection_title</td>
 <td>string</td>
 <td>Titre de la collection à laquelle appartient le produit</td>
@@ -269,16 +269,6 @@
 <td>collection_biznumber</td>
 <td>string</td>
 <td>Identifiant Louise de la collection à laquelle appartient le produit</td>
-</tr>
-<tr>
-<td>collection_info</td>
-<td>string</td>
-<td>Information concernant la collection du produit</td>
-</tr>
-<tr>
-<td>status</td>
-<td>boolean</td>
-<td>Information pour l&#x27;équipe TFO (veuillez ignorer ce champ)</td>
 </tr>
 <tr>
 <td>slug_fr</td>
@@ -326,26 +316,6 @@
 <td>Liste du casting du produit</td>
 </tr>
 <tr>
-<td>linked_products</td>
-<td>json</td>
-<td>Liste des produits liés</td>
-</tr>
-<tr>
-<td>keywords</td>
-<td>json</td>
-<td>Liste des mots clés pour le produit</td>
-</tr>
-<tr>
-<td>is_audio</td>
-<td>boolean</td>
-<td>Indique si le produit est un audio. Si oui, le champ audio_link est rempli</td>
-</tr>
-<tr>
-<td>audio_link</td>
-<td>string</td>
-<td>Le lien pour récupérer le fichier mp3</td>
-</tr>
-<tr>
 <td>created_at</td>
 <td>time America/Toronto</td>
 <td>Date de mise enligne du produit</td>
@@ -367,23 +337,16 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../collections/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../programmation/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Collections</span>
+                                                <span class="block mt-1">Programmation</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../programmation/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Programmation</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -424,6 +387,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Produits", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Series", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
