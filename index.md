@@ -1,4 +1,4 @@
-# Documentation sur les parametres API de Mogador
+# Documentation sur les données TFO.
 
 L'API Mogador utilise le service Directus. Pour tout renseignement sur les types d'appels et les possibilites de l'API, veuillez vous référer à la documentation de l'API de Directus se trouvant [ici](https://docs.directus.io)
 
